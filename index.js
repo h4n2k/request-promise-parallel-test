@@ -6,17 +6,27 @@ const options = {
   json: true
 }
 
+const password = 'Wallex$2019'
+
 // DATA BODY
 
 const dataLogin = [
   {
     username: 'wallex.test+a1@outlook.com',
-    password: 'Wallex$2019'
+    password: password
   },
   {
-    username: 'wallex.test+a2@outlook.com',
-    password: 'Wallex$2019'
-  }
+    username: 'wallex.test+b1@outlook.com',
+    password: password
+  },
+  {
+    username: 'wallex.test+c1@outlook.com',
+    password: password
+  },
+  {
+    username: 'wallex.test+d1@outlook.com',
+    password: password
+  },
 ];
 
 const dataRates = [
@@ -32,17 +42,50 @@ const dataRates = [
     'fixed_side': 'buy',
     'amount': 200
   },
+  {
+    'sell_currency': 'IDR',
+    'buy_currency': 'SGD',
+    'fixed_side': 'buy',
+    'amount': 300
+  },
+  {
+    'sell_currency': 'IDR',
+    'buy_currency': 'SGD',
+    'fixed_side': 'buy',
+    'amount': 400
+  },
+  {
+    'sell_currency': 'IDR',
+    'buy_currency': 'SGD',
+    'fixed_side': 'buy',
+    'amount': 600
+  },
 ];
 
 const dataConversion = [
   {
     'reason': 'Wallex Conversion - Postman - Fathoni',
-    'reference_id': 'ABCDEFG-123451',
+    'reference_id': 'ABCDEFG-00001',
     // 'quote_uuid': '{{QUOTE_UUID}}'
   },
   {
     'reason': 'Wallex Conversion - Postman - Fathoni',
-    'reference_id': 'ABCDEFG-123452',
+    'reference_id': 'ABCDEFG-00002',
+    // 'quote_uuid': '{{QUOTE_UUID}}'
+  },
+  {
+    'reason': 'Wallex Conversion - Postman - Fathoni',
+    'reference_id': 'ABCDEFG-00003',
+    // 'quote_uuid': '{{QUOTE_UUID}}'
+  },
+  {
+    'reason': 'Wallex Conversion - Postman - Fathoni',
+    'reference_id': 'ABCDEFG-00004',
+    // 'quote_uuid': '{{QUOTE_UUID}}'
+  },
+  {
+    'reason': 'Wallex Conversion - Postman - Fathoni',
+    'reference_id': 'ABCDEFG-00005',
     // 'quote_uuid': '{{QUOTE_UUID}}'
   },
 ]
@@ -89,6 +132,8 @@ let promiseConversion;
 
 // Funding - Create
 
+
+// START TEST
 const startTest = async () => {
   // login
   const resultLogin = await Promise.all(promiseLogin);
