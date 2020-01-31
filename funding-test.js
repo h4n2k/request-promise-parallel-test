@@ -23,10 +23,10 @@ const dataLogin = [
     username: 'wallex.test+c1@outlook.com',
     password: password
   },
-  // {
-  //   username: 'wallex.test+d1@outlook.com',
-  //   password: password
-  // },
+  {
+    username: 'wallex.test+d1@outlook.com',
+    password: password
+  },
 ];
 
 const dataRates = [
@@ -48,12 +48,12 @@ const dataRates = [
     fixed_side: 'buy',
     amount: 300
   },
-  // {
-  //   sell_currency: 'IDR',
-  //   buy_currency: 'SGD',
-  //   fixed_side: 'buy',
-  //   amount: 400
-  // },
+  {
+    sell_currency: 'IDR',
+    buy_currency: 'SGD',
+    fixed_side: 'buy',
+    amount: 400
+  },
   // {
   //   sell_currency: 'IDR',
   //   buy_currency: 'SGD',
@@ -78,11 +78,11 @@ const dataConversion = [
     reference_id: 'ABCDEFG-00003',
     // quote_uuid: '{{QUOTE_UUID}}'
   },
-  // {
-  //   reason: 'Wallex Conversion - Postman - Fathoni',
-  //   reference_id: 'ABCDEFG-00004',
-  //   // quote_uuid: '{{QUOTE_UUID}}'
-  // },
+  {
+    reason: 'Wallex Conversion - Postman - Fathoni',
+    reference_id: 'ABCDEFG-00004',
+    // quote_uuid: '{{QUOTE_UUID}}'
+  },
   // {
   //   reason: 'Wallex Conversion - Postman - Fathoni',
   //   reference_id: 'ABCDEFG-00005',
@@ -98,27 +98,27 @@ const dataFunding = [
     reference: 'POSTMAN',
     bank_account_number: '2612630888'
   },
-  // {
-  //   amount: 1200001,
-  //   funding_method: 'BANK_TRANSFER',
-  //   currency: 'IDR',
-  //   reference: 'POSTMAN',
-  //   bank_account_number: '2612630888'
-  // },
-  // {
-  //   amount: 100000,
-  //   funding_method: 'BANK_TRANSFER',
-  //   currency: 'IDR',
-  //   reference: 'POSTMAN',
-  //   bank_account_number: '2612630888'
-  // },
-  // {
-  //   amount: 1200000,
-  //   funding_method: 'BANK_TRANSFER',
-  //   currency: 'IDR',
-  //   reference: 'POSTMAN',
-  //   bank_account_number: '2612630888'
-  // },
+  {
+    amount: 1200001,
+    funding_method: 'BANK_TRANSFER',
+    currency: 'IDR',
+    reference: 'POSTMAN',
+    bank_account_number: '2612630888'
+  },
+  {
+    amount: 1200002,
+    funding_method: 'BANK_TRANSFER',
+    currency: 'IDR',
+    reference: 'POSTMAN',
+    bank_account_number: '2612630888'
+  },
+  {
+    amount: 1200003,
+    funding_method: 'BANK_TRANSFER',
+    currency: 'IDR',
+    reference: 'POSTMAN',
+    bank_account_number: '2612630888'
+  },
 ];
 
 
